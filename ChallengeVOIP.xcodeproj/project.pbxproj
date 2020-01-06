@@ -78,6 +78,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3815802B23C38F3A0033F2F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3815802C23C38F460033F2F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3861405923C38C350066E63C /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3815802D23C38F4F0033F2F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3815802E23C38F750033F2F6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3861404D23C38C320066E63C /* AppDelegate.swift */,
+				3861404F23C38C320066E63C /* SceneDelegate.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		3861404123C38C320066E63C = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +132,12 @@
 		3861404C23C38C320066E63C /* ChallengeVOIP */ = {
 			isa = PBXGroup;
 			children = (
-				3861404D23C38C320066E63C /* AppDelegate.swift */,
-				3861404F23C38C320066E63C /* SceneDelegate.swift */,
+				3815802E23C38F750033F2F6 /* Settings */,
+				3815802D23C38F4F0033F2F6 /* ViewModel */,
+				3815802C23C38F460033F2F6 /* View */,
+				3815802B23C38F3A0033F2F6 /* Model */,
 				3861405123C38C320066E63C /* ViewController.swift */,
 				3861405323C38C320066E63C /* Main.storyboard */,
-				3861405923C38C350066E63C /* Assets.xcassets */,
 				3861405B23C38C350066E63C /* LaunchScreen.storyboard */,
 				3861405E23C38C350066E63C /* Info.plist */,
 				3861405623C38C320066E63C /* ChallengeVOIP.xcdatamodeld */,
