@@ -1,0 +1,6 @@
+framework module Pods_ChallengeVOIP_ChallengeVOIPUITests {
+  umbrella header "Pods-ChallengeVOIP-ChallengeVOIPUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

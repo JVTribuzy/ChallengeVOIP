@@ -19,6 +19,9 @@
 		3861405D23C38C350066E63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3861405B23C38C350066E63C /* LaunchScreen.storyboard */; };
 		3861406823C38C350066E63C /* ChallengeVOIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861406723C38C350066E63C /* ChallengeVOIPTests.swift */; };
 		3861407323C38C350066E63C /* ChallengeVOIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861407223C38C350066E63C /* ChallengeVOIPUITests.swift */; };
+		68EFA85CCC98CC595226D962 /* Pods_ChallengeVOIP_ChallengeVOIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 357BB3A6DC26A9BE21687A14 /* Pods_ChallengeVOIP_ChallengeVOIPUITests.framework */; };
+		8F2BC313A8FFCBFC0D78DF4E /* Pods_ChallengeVOIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE8F4FF4D535883BA2636C9 /* Pods_ChallengeVOIP.framework */; };
+		BA1489292ECD98DFF3518EBE /* Pods_ChallengeVOIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F094040C5F9BBC1557B301F /* Pods_ChallengeVOIPTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CE8F4FF4D535883BA2636C9 /* Pods_ChallengeVOIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeVOIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DD183674DB3C1BD97D7E554 /* Pods-ChallengeVOIP-ChallengeVOIPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIP-ChallengeVOIPUITests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIP-ChallengeVOIPUITests/Pods-ChallengeVOIP-ChallengeVOIPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F094040C5F9BBC1557B301F /* Pods_ChallengeVOIPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeVOIPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		357BB3A6DC26A9BE21687A14 /* Pods_ChallengeVOIP_ChallengeVOIPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeVOIP_ChallengeVOIPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3815803123C391DF0033F2F6 /* VOIPCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPCustomView.swift; sourceTree = "<group>"; };
 		3815803423C392710033F2F6 /* VOIPTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPTableView.swift; sourceTree = "<group>"; };
 		3839652123C3A44E00CF9BDE /* VOIPTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPTableViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +64,11 @@
 		3861406E23C38C350066E63C /* ChallengeVOIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeVOIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3861407223C38C350066E63C /* ChallengeVOIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeVOIPUITests.swift; sourceTree = "<group>"; };
 		3861407423C38C350066E63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5563AC9F0656D4405F7474 /* Pods-ChallengeVOIPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIPTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIPTests/Pods-ChallengeVOIPTests.release.xcconfig"; sourceTree = "<group>"; };
+		60AF108BC44957A63BF36B3B /* Pods-ChallengeVOIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIP.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIP/Pods-ChallengeVOIP.debug.xcconfig"; sourceTree = "<group>"; };
+		90D3BA40E22579A53CF0ADE8 /* Pods-ChallengeVOIP-ChallengeVOIPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIP-ChallengeVOIPUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIP-ChallengeVOIPUITests/Pods-ChallengeVOIP-ChallengeVOIPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C32D3556A5FE70BEF561D2D3 /* Pods-ChallengeVOIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIP.release.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIP/Pods-ChallengeVOIP.release.xcconfig"; sourceTree = "<group>"; };
+		FE0DE4F0EE4664D7CCBAB548 /* Pods-ChallengeVOIPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIPTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIPTests/Pods-ChallengeVOIPTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2BC313A8FFCBFC0D78DF4E /* Pods_ChallengeVOIP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1489292ECD98DFF3518EBE /* Pods_ChallengeVOIPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68EFA85CCC98CC595226D962 /* Pods_ChallengeVOIP_ChallengeVOIPUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +173,8 @@
 				3861406623C38C350066E63C /* ChallengeVOIPTests */,
 				3861407123C38C350066E63C /* ChallengeVOIPUITests */,
 				3861404B23C38C320066E63C /* Products */,
+				9148B423BC9852A6079AC85C /* Pods */,
+				5D05C67B4044053C1C1A79D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +229,30 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		5D05C67B4044053C1C1A79D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CE8F4FF4D535883BA2636C9 /* Pods_ChallengeVOIP.framework */,
+				357BB3A6DC26A9BE21687A14 /* Pods_ChallengeVOIP_ChallengeVOIPUITests.framework */,
+				2F094040C5F9BBC1557B301F /* Pods_ChallengeVOIPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9148B423BC9852A6079AC85C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60AF108BC44957A63BF36B3B /* Pods-ChallengeVOIP.debug.xcconfig */,
+				C32D3556A5FE70BEF561D2D3 /* Pods-ChallengeVOIP.release.xcconfig */,
+				90D3BA40E22579A53CF0ADE8 /* Pods-ChallengeVOIP-ChallengeVOIPUITests.debug.xcconfig */,
+				0DD183674DB3C1BD97D7E554 /* Pods-ChallengeVOIP-ChallengeVOIPUITests.release.xcconfig */,
+				FE0DE4F0EE4664D7CCBAB548 /* Pods-ChallengeVOIPTests.debug.xcconfig */,
+				3A5563AC9F0656D4405F7474 /* Pods-ChallengeVOIPTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3861407723C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIP" */;
 			buildPhases = (
+				54952906D48EB3ADBACF25EA /* [CP] Check Pods Manifest.lock */,
 				3861404623C38C320066E63C /* Sources */,
 				3861404723C38C320066E63C /* Frameworks */,
 				3861404823C38C320066E63C /* Resources */,
+				8C3883DC2ED00A5DA243A20D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3861407A23C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIPTests" */;
 			buildPhases = (
+				A4DF74AC94BE0E0D80AD2972 /* [CP] Check Pods Manifest.lock */,
 				3861405F23C38C350066E63C /* Sources */,
 				3861406023C38C350066E63C /* Frameworks */,
 				3861406123C38C350066E63C /* Resources */,
@@ -254,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3861407D23C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIPUITests" */;
 			buildPhases = (
+				D12E9EDE5D6876454240BEBE /* [CP] Check Pods Manifest.lock */,
 				3861406A23C38C350066E63C /* Sources */,
 				3861406B23C38C350066E63C /* Frameworks */,
 				3861406C23C38C350066E63C /* Resources */,
+				2D8675C0CAC80189DD12AF1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,6 +383,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D8675C0CAC80189DD12AF1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeVOIP-ChallengeVOIPUITests/Pods-ChallengeVOIP-ChallengeVOIPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeVOIP-ChallengeVOIPUITests/Pods-ChallengeVOIP-ChallengeVOIPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeVOIP-ChallengeVOIPUITests/Pods-ChallengeVOIP-ChallengeVOIPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54952906D48EB3ADBACF25EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeVOIP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C3883DC2ED00A5DA243A20D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeVOIP/Pods-ChallengeVOIP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeVOIP/Pods-ChallengeVOIP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeVOIP/Pods-ChallengeVOIP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DF74AC94BE0E0D80AD2972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeVOIPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D12E9EDE5D6876454240BEBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeVOIP-ChallengeVOIPUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3861404623C38C320066E63C /* Sources */ = {
@@ -520,6 +669,7 @@
 		};
 		3861407823C38C350066E63C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60AF108BC44957A63BF36B3B /* Pods-ChallengeVOIP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +688,7 @@
 		};
 		3861407923C38C350066E63C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32D3556A5FE70BEF561D2D3 /* Pods-ChallengeVOIP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -556,6 +707,7 @@
 		};
 		3861407B23C38C350066E63C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0DE4F0EE4664D7CCBAB548 /* Pods-ChallengeVOIPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -578,6 +730,7 @@
 		};
 		3861407C23C38C350066E63C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5563AC9F0656D4405F7474 /* Pods-ChallengeVOIPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -600,6 +753,7 @@
 		};
 		3861407E23C38C350066E63C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D3BA40E22579A53CF0ADE8 /* Pods-ChallengeVOIP-ChallengeVOIPUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -620,6 +774,7 @@
 		};
 		3861407F23C38C350066E63C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD183674DB3C1BD97D7E554 /* Pods-ChallengeVOIP-ChallengeVOIPUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
