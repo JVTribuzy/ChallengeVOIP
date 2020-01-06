@@ -11,9 +11,13 @@ import UIKit
 
 class VOIPTableViewController: UIViewController{
     
+    public let customView: VOIPTableView = VOIPTableView.init(frame: .zero, style: .plain)
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         
-        self.view = VOIPTableView.init(frame: .zero, style: .plain)
+        self.view = customView
     }
+    
+
 }

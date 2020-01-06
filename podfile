@@ -4,16 +4,6 @@
 target 'ChallengeVOIP' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'SteviaLayout', '~> 4.5'
-  # Pods for ChallengeVOIP
-
-  target 'ChallengeVOIPTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ChallengeVOIPUITests' do
-    # Pods for testing
-  end
-
+  pod 'SteviaLayout'
+  
 end

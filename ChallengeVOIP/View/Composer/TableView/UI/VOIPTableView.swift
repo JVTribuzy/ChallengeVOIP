@@ -8,12 +8,16 @@
 
 import Foundation
 import UIKit
+import Stevia
 
 class VOIPTableView: UITableView, VOIPCustomView{
     
     // MARK: - VOIPTableView Lifecycle
     override init(frame: CGRect, style: UITableView.Style) {
         super .init(frame: .zero, style: style)
+        
+        self.style()
+        self.autoLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -21,8 +25,13 @@ class VOIPTableView: UITableView, VOIPCustomView{
     }
     
     // MARK: - Visual
-    func style() {}
+    func style() {
+        self.backgroundColor = .white
+    }
     
-    func autoLayout() {}
+    func autoLayout() {
+        self.left(0.0).top(0.0).right(0.0).bottom(0.0)
+        
+    }
     
 }
