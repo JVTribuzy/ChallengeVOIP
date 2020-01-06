@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3861404E23C38C320066E63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861404D23C38C320066E63C /* AppDelegate.swift */; };
+		3861405023C38C320066E63C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861404F23C38C320066E63C /* SceneDelegate.swift */; };
+		3861405223C38C320066E63C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861405123C38C320066E63C /* ViewController.swift */; };
+		3861405523C38C320066E63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3861405323C38C320066E63C /* Main.storyboard */; };
+		3861405823C38C320066E63C /* ChallengeVOIP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3861405623C38C320066E63C /* ChallengeVOIP.xcdatamodeld */; };
+		3861405A23C38C350066E63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3861405923C38C350066E63C /* Assets.xcassets */; };
+		3861405D23C38C350066E63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3861405B23C38C350066E63C /* LaunchScreen.storyboard */; };
+		3861406823C38C350066E63C /* ChallengeVOIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861406723C38C350066E63C /* ChallengeVOIPTests.swift */; };
+		3861407323C38C350066E63C /* ChallengeVOIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861407223C38C350066E63C /* ChallengeVOIPUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3861406423C38C350066E63C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3861404223C38C320066E63C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3861404923C38C320066E63C;
+			remoteInfo = ChallengeVOIP;
+		};
+		3861406F23C38C350066E63C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3861404223C38C320066E63C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3861404923C38C320066E63C;
+			remoteInfo = ChallengeVOIP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3861404A23C38C320066E63C /* ChallengeVOIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeVOIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3861404D23C38C320066E63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3861404F23C38C320066E63C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3861405123C38C320066E63C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3861405423C38C320066E63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3861405723C38C320066E63C /* ChallengeVOIP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChallengeVOIP.xcdatamodel; sourceTree = "<group>"; };
+		3861405923C38C350066E63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3861405C23C38C350066E63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3861405E23C38C350066E63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3861406323C38C350066E63C /* ChallengeVOIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeVOIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3861406723C38C350066E63C /* ChallengeVOIPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeVOIPTests.swift; sourceTree = "<group>"; };
+		3861406923C38C350066E63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3861406E23C38C350066E63C /* ChallengeVOIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeVOIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3861407223C38C350066E63C /* ChallengeVOIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeVOIPUITests.swift; sourceTree = "<group>"; };
+		3861407423C38C350066E63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3861404723C38C320066E63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3861406023C38C350066E63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3861406B23C38C350066E63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3861404123C38C320066E63C = {
+			isa = PBXGroup;
+			children = (
+				3861404C23C38C320066E63C /* ChallengeVOIP */,
+				3861406623C38C350066E63C /* ChallengeVOIPTests */,
+				3861407123C38C350066E63C /* ChallengeVOIPUITests */,
+				3861404B23C38C320066E63C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3861404B23C38C320066E63C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3861404A23C38C320066E63C /* ChallengeVOIP.app */,
+				3861406323C38C350066E63C /* ChallengeVOIPTests.xctest */,
+				3861406E23C38C350066E63C /* ChallengeVOIPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3861404C23C38C320066E63C /* ChallengeVOIP */ = {
+			isa = PBXGroup;
+			children = (
+				3861404D23C38C320066E63C /* AppDelegate.swift */,
+				3861404F23C38C320066E63C /* SceneDelegate.swift */,
+				3861405123C38C320066E63C /* ViewController.swift */,
+				3861405323C38C320066E63C /* Main.storyboard */,
+				3861405923C38C350066E63C /* Assets.xcassets */,
+				3861405B23C38C350066E63C /* LaunchScreen.storyboard */,
+				3861405E23C38C350066E63C /* Info.plist */,
+				3861405623C38C320066E63C /* ChallengeVOIP.xcdatamodeld */,
+			);
+			path = ChallengeVOIP;
+			sourceTree = "<group>";
+		};
+		3861406623C38C350066E63C /* ChallengeVOIPTests */ = {
+			isa = PBXGroup;
+			children = (
+				3861406723C38C350066E63C /* ChallengeVOIPTests.swift */,
+				3861406923C38C350066E63C /* Info.plist */,
+			);
+			path = ChallengeVOIPTests;
+			sourceTree = "<group>";
+		};
+		3861407123C38C350066E63C /* ChallengeVOIPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3861407223C38C350066E63C /* ChallengeVOIPUITests.swift */,
+				3861407423C38C350066E63C /* Info.plist */,
+			);
+			path = ChallengeVOIPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3861404923C38C320066E63C /* ChallengeVOIP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3861407723C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIP" */;
+			buildPhases = (
+				3861404623C38C320066E63C /* Sources */,
+				3861404723C38C320066E63C /* Frameworks */,
+				3861404823C38C320066E63C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChallengeVOIP;
+			productName = ChallengeVOIP;
+			productReference = 3861404A23C38C320066E63C /* ChallengeVOIP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3861406223C38C350066E63C /* ChallengeVOIPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3861407A23C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIPTests" */;
+			buildPhases = (
+				3861405F23C38C350066E63C /* Sources */,
+				3861406023C38C350066E63C /* Frameworks */,
+				3861406123C38C350066E63C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3861406523C38C350066E63C /* PBXTargetDependency */,
+			);
+			name = ChallengeVOIPTests;
+			productName = ChallengeVOIPTests;
+			productReference = 3861406323C38C350066E63C /* ChallengeVOIPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3861406D23C38C350066E63C /* ChallengeVOIPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3861407D23C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIPUITests" */;
+			buildPhases = (
+				3861406A23C38C350066E63C /* Sources */,
+				3861406B23C38C350066E63C /* Frameworks */,
+				3861406C23C38C350066E63C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3861407023C38C350066E63C /* PBXTargetDependency */,
+			);
+			name = ChallengeVOIPUITests;
+			productName = ChallengeVOIPUITests;
+			productReference = 3861406E23C38C350066E63C /* ChallengeVOIPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3861404223C38C320066E63C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "João Tribuzy";
+				TargetAttributes = {
+					3861404923C38C320066E63C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					3861406223C38C350066E63C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3861404923C38C320066E63C;
+					};
+					3861406D23C38C350066E63C = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3861404923C38C320066E63C;
+					};
+				};
+			};
+			buildConfigurationList = 3861404523C38C320066E63C /* Build configuration list for PBXProject "ChallengeVOIP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3861404123C38C320066E63C;
+			productRefGroup = 3861404B23C38C320066E63C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3861404923C38C320066E63C /* ChallengeVOIP */,
+				3861406223C38C350066E63C /* ChallengeVOIPTests */,
+				3861406D23C38C350066E63C /* ChallengeVOIPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3861404823C38C320066E63C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3861405D23C38C350066E63C /* LaunchScreen.storyboard in Resources */,
+				3861405A23C38C350066E63C /* Assets.xcassets in Resources */,
+				3861405523C38C320066E63C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3861406123C38C350066E63C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3861406C23C38C350066E63C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3861404623C38C320066E63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3861405223C38C320066E63C /* ViewController.swift in Sources */,
+				3861404E23C38C320066E63C /* AppDelegate.swift in Sources */,
+				3861405023C38C320066E63C /* SceneDelegate.swift in Sources */,
+				3861405823C38C320066E63C /* ChallengeVOIP.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3861405F23C38C350066E63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3861406823C38C350066E63C /* ChallengeVOIPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3861406A23C38C350066E63C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3861407323C38C350066E63C /* ChallengeVOIPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3861406523C38C350066E63C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3861404923C38C320066E63C /* ChallengeVOIP */;
+			targetProxy = 3861406423C38C350066E63C /* PBXContainerItemProxy */;
+		};
+		3861407023C38C350066E63C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3861404923C38C320066E63C /* ChallengeVOIP */;
+			targetProxy = 3861406F23C38C350066E63C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3861405323C38C320066E63C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3861405423C38C320066E63C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3861405B23C38C350066E63C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3861405C23C38C350066E63C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3861407523C38C350066E63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3861407623C38C350066E63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3861407823C38C350066E63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S67GUZ7P6T;
+				INFOPLIST_FILE = ChallengeVOIP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tribuzy.ChallengeVOIP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3861407923C38C350066E63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S67GUZ7P6T;
+				INFOPLIST_FILE = ChallengeVOIP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tribuzy.ChallengeVOIP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3861407B23C38C350066E63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S67GUZ7P6T;
+				INFOPLIST_FILE = ChallengeVOIPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tribuzy.ChallengeVOIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeVOIP.app/ChallengeVOIP";
+			};
+			name = Debug;
+		};
+		3861407C23C38C350066E63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S67GUZ7P6T;
+				INFOPLIST_FILE = ChallengeVOIPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tribuzy.ChallengeVOIPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeVOIP.app/ChallengeVOIP";
+			};
+			name = Release;
+		};
+		3861407E23C38C350066E63C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S67GUZ7P6T;
+				INFOPLIST_FILE = ChallengeVOIPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tribuzy.ChallengeVOIPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChallengeVOIP;
+			};
+			name = Debug;
+		};
+		3861407F23C38C350066E63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S67GUZ7P6T;
+				INFOPLIST_FILE = ChallengeVOIPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tribuzy.ChallengeVOIPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChallengeVOIP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3861404523C38C320066E63C /* Build configuration list for PBXProject "ChallengeVOIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3861407523C38C350066E63C /* Debug */,
+				3861407623C38C350066E63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3861407723C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3861407823C38C350066E63C /* Debug */,
+				3861407923C38C350066E63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3861407A23C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3861407B23C38C350066E63C /* Debug */,
+				3861407C23C38C350066E63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3861407D23C38C350066E63C /* Build configuration list for PBXNativeTarget "ChallengeVOIPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3861407E23C38C350066E63C /* Debug */,
+				3861407F23C38C350066E63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3861405623C38C320066E63C /* ChallengeVOIP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3861405723C38C320066E63C /* ChallengeVOIP.xcdatamodel */,
+			);
+			currentVersion = 3861405723C38C320066E63C /* ChallengeVOIP.xcdatamodel */;
+			path = ChallengeVOIP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3861404223C38C320066E63C /* Project object */;
+}
