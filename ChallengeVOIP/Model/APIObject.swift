@@ -41,7 +41,10 @@ func loadJSON(){
                   return
             }
             for dictionary in jsonArray{
-                globalObjects.append(APIObject(dictionary))
+                DispatchQueue.main.async {
+                    globalObjects.append(APIObject(dictionary))
+                    NotificationCenter.default.post(name: .VOIPReloadMainTableView, object: nil)
+                }
             }
             
         } catch let parsingError {

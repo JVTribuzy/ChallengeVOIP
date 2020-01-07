@@ -26,6 +26,8 @@ class VOIPTableViewController: UITableViewController{
         self.autoLayout()
         
         loadJSON()
+    
+        self.settingNotifications()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
@@ -42,6 +44,12 @@ class VOIPTableViewController: UITableViewController{
         return apiObjects.count
     }
 
+    // MARK: - NSNotification Settings
+    private func settingNotifications(){
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: .VOIPReloadMainTableView, object: nil)
+    }
+    
+    @objc func reloadData(){ self.tableView.reloadData() }
     
 }
 

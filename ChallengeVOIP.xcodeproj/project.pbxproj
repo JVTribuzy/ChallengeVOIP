@@ -19,6 +19,7 @@
 		3861406823C38C350066E63C /* ChallengeVOIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861406723C38C350066E63C /* ChallengeVOIPTests.swift */; };
 		3861407323C38C350066E63C /* ChallengeVOIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861407223C38C350066E63C /* ChallengeVOIPUITests.swift */; };
 		389D3D7723C3B739009DD7F1 /* APIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389D3D7623C3B739009DD7F1 /* APIObject.swift */; };
+		389D3D8723C530B2009DD7F1 /* Extension+NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389D3D8623C530B2009DD7F1 /* Extension+NSNotification.swift */; };
 		6AD229593FBF999F8CF0BDAF /* Pods_ChallengeVOIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D6721059D1B7E643E5F87 /* Pods_ChallengeVOIP.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		3861407223C38C350066E63C /* ChallengeVOIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeVOIPUITests.swift; sourceTree = "<group>"; };
 		3861407423C38C350066E63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389D3D7623C3B739009DD7F1 /* APIObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIObject.swift; sourceTree = "<group>"; };
+		389D3D8623C530B2009DD7F1 /* Extension+NSNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSNotification.swift"; sourceTree = "<group>"; };
 		5FA3DE135A42387AABF46D17 /* Pods-ChallengeVOIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIP.release.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIP/Pods-ChallengeVOIP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +201,7 @@
 		3861404C23C38C320066E63C /* ChallengeVOIP */ = {
 			isa = PBXGroup;
 			children = (
+				389D3D8523C5308F009DD7F1 /* Extensions */,
 				3815802E23C38F750033F2F6 /* Settings */,
 				3815802D23C38F4F0033F2F6 /* ViewModel */,
 				3815802C23C38F460033F2F6 /* View */,
@@ -234,6 +237,14 @@
 				3815803423C392710033F2F6 /* VOIPTableView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		389D3D8523C5308F009DD7F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				389D3D8623C530B2009DD7F1 /* Extension+NSNotification.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3815803223C391DF0033F2F6 /* VOIPCustomView.swift in Sources */,
+				389D3D8723C530B2009DD7F1 /* Extension+NSNotification.swift in Sources */,
 				3839652223C3A44E00CF9BDE /* VOIPTableViewController.swift in Sources */,
 				3815803523C392710033F2F6 /* VOIPTableView.swift in Sources */,
 				3861404E23C38C320066E63C /* AppDelegate.swift in Sources */,
