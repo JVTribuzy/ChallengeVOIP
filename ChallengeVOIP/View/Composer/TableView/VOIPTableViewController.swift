@@ -16,7 +16,6 @@ class VOIPTableViewController: UITableViewController{
     public let customView: VOIPTableView = VOIPTableView.init(frame: .zero, style: .plain)
     
     public let cellId = "cellId"
-    var apiObjects: [APIObject] = [APIObject]()
     
     // MARK: - viewDidLoad
     override func viewDidLoad(){
@@ -35,13 +34,13 @@ class VOIPTableViewController: UITableViewController{
     // MARK: - TableView Settings
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        let currentItem = apiObjects[indexPath.row]
+        let currentItem = globalObjects[indexPath.row]
         cell.textLabel?.text = currentItem.title
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return apiObjects.count
+        return globalObjects.count
     }
 
     // MARK: - NSNotification Settings
