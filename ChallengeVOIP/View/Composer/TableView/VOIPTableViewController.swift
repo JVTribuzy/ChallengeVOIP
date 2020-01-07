@@ -25,7 +25,7 @@ class VOIPTableViewController: UITableViewController{
         self.style()
         self.autoLayout()
         
-        createObjectArray()
+        loadJSON()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
@@ -42,14 +42,7 @@ class VOIPTableViewController: UITableViewController{
         return apiObjects.count
     }
 
-    func createObjectArray(){
-        apiObjects.append(APIObject(albumID: 1, id: 1, title: "Título 1", url: nil, thumbNailURL: nil))
-        apiObjects.append(APIObject(albumID: 1, id: 2, title: "Título 2", url: nil, thumbNailURL: nil))
-        apiObjects.append(APIObject(albumID: 1, id: 3, title: "Título 3", url: nil, thumbNailURL: nil))
-        
-        tableView.reloadData()
-        
-    }
+    
 }
 
 
