@@ -32,7 +32,7 @@ class VOIPTableViewController: UITableViewController, UINavigationControllerDele
         self.autoLayout()
         
         loadJSON()
-    
+        
         self.settingNotifications()
         
         tableView.register(VOIPCustomTableViewCell.self, forCellReuseIdentifier: cellId)
@@ -47,11 +47,12 @@ class VOIPTableViewController: UITableViewController, UINavigationControllerDele
     // MARK: - TableView Settings
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! VOIPCustomTableViewCell
-        let currentItem = globalObjects[indexPath.row]
-        cell.objectID.text = String(describing: currentItem.id)
-        cell.title.text = "Title:  \(String(describing: currentItem.title))"
-        cell.thumbnailImage.image = currentItem.thumbNailImage
-        cell.albumID.text = "Album ID: \(String(describing: currentItem.albumID))"
+        let current = globalObjects[indexPath.row]
+        cell.objectID.text = String(describing: current.id)
+        cell.albumID.text = String(describing: current.albumID)
+        cell.title.text = String(describing: current.title)
+        cell.thumbnailImage.image = current.thumbNailImage
+
         return cell
     }
     

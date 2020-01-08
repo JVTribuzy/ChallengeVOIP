@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 public class APIObject {
     var albumID: Int
@@ -120,11 +121,32 @@ func loadJSON(){
                   return
             }
             for dictionary in jsonArray{
+                
                 DispatchQueue.main.async {
                     globalObjects.append(APIObject(dictionary))
                     NotificationCenter.default.post(name: .VOIPReloadMainTableView, object: nil)
+                    
+                    DispatchQueue.main.async {
+                        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                        let context = appDelegate.persistentContainer.viewContext
+                        let entity = NSEntityDescription.entity(forEntityName: "APIObjectMO", in: context)
+                        let object = NSManagedObject(entity: entity!, insertInto: context)
+                        object.setValue(APIObject(dictionary).title, forKey: "title")
+                        object.setValue(APIObject(dictionary).id as Int, forKey: "id")
+                        object.setValue(APIObject(dictionary).albumID as Int, forKey: "albumID")
+                        object.setValue(APIObject(dictionary).url as String, forKey: "url")
+                        object.setValue(APIObject(dictionary).thumbNailURL as String, forKey: "thumbnailUrl")
+                        
+                        do {
+                           try context.save()
+                          } catch {
+                           print("Failed saving")
+                        }
+                    }
+                    
                 }
             }
+            
             
         } catch let parsingError {
             print("Error", parsingError)
@@ -132,42 +154,17 @@ func loadJSON(){
         
         
     }
+    
     task.resume()
     
     
 }
 
-
-
-// MARK: - Download Session for the Images
-//let placeholderImage: UIImage = {
-//    return UIImage(named: "placeholder")!
-//}()
-//
-//let defaultSize: CGSize = {
-//    return CGSize(width: 150, height: 150)
-//}()
-//
-//let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)
-//
-//private var cachedImage: UIImage? = nil
-//
-//var image: UIImage {
-//    if cachedImage == nil {
-//        cachedImage = placeholderImage
-//    }
-//
-//    return cachedImage!
-//}
-//
-//private func fetchImage(url: URL) {
-//    let task = imageDownloadSession.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
-//        guard let data = data, error == nil else {
-//            return
-//        }
-//        cachedImage = UIImage(data: data, scale: UIScreen.main.scale)
-//        
-//    }
-//
-//    task.resume()
-//}
+//MARK: - CoreData
+func saveCoreData(){
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let context = appDelegate.persistentContainer.viewContext
+    let entity = NSEntityDescription.entity(forEntityName: "APIObjectMO", in: context)
+    let object = NSManagedObject(entity: entity!, insertInto: context)
+    
+}
