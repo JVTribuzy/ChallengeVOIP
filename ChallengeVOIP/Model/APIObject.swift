@@ -121,28 +121,30 @@ func loadJSON(){
                   return
             }
             for dictionary in jsonArray{
+                
                 DispatchQueue.main.async {
                     globalObjects.append(APIObject(dictionary))
                     NotificationCenter.default.post(name: .VOIPReloadMainTableView, object: nil)
-                }
-                
-        
                     
-                    let entity =  NSEntityDescription.entity(forEntityName: "APIObjectMO", in:managedObjectContext!)
-                    let item = NSManagedObject(entity: entity!, insertInto:managedObjectContext!)
-                    item.setValue(APIObject(dictionary).title, forKey: "title")
-                    item.setValue(APIObject(dictionary).id as Int, forKey: "id")
-                    item.setValue(APIObject(dictionary).albumID as Int, forKey: "albumID")
-                    item.setValue(APIObject(dictionary).url as String, forKey: "url")
-                    item.setValue(APIObject(dictionary).thumbNailURL as String, forKey: "thumbnailUrl")
-
-                    do {
-                        try managedObjectContext!.save()
-                    } catch _ {
-                        print("Something went wrong.")
+                    DispatchQueue.main.async {
+                        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                        let context = appDelegate.persistentContainer.viewContext
+                        let entity = NSEntityDescription.entity(forEntityName: "APIObjectMO", in: context)
+                        let object = NSManagedObject(entity: entity!, insertInto: context)
+                        object.setValue(APIObject(dictionary).title, forKey: "title")
+                        object.setValue(APIObject(dictionary).id as Int, forKey: "id")
+                        object.setValue(APIObject(dictionary).albumID as Int, forKey: "albumID")
+                        object.setValue(APIObject(dictionary).url as String, forKey: "url")
+                        object.setValue(APIObject(dictionary).thumbNailURL as String, forKey: "thumbnailUrl")
+                        
+                        do {
+                           try context.save()
+                          } catch {
+                           print("Failed saving")
+                        }
                     }
-        
-                
+                    
+                }
             }
             
             
@@ -159,56 +161,10 @@ func loadJSON(){
 }
 
 //MARK: - CoreData
-public var applicationDocumentsDirectory: NSURL = {
-    // The directory the application uses to store the Core Data store file.
-    let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-    return urls[urls.count-1] as NSURL
-}()
-
-
-var managedObjectModel: NSManagedObjectModel = {
-    // The managed object model for the application.
-    let modelURL = Bundle.main.url(forResource: "ChallengeVOIP", withExtension: "momd")!
-    return NSManagedObjectModel(contentsOf: modelURL)!
-}()
-
-public var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
-    // Create the coordinator and store
-    let coordinator = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel)
-    let url = applicationDocumentsDirectory.appendingPathComponent("MyCoreDataProject.sqlite")
-    var failureReason = "There was an error creating or loading the application's saved data."
-    do {
-        try coordinator.addPersistentStore(ofType: NSSQLiteStoreType,
-                                           configurationName: nil,
-                                           at: url, options: nil)
-    } catch {
-        // Report any error we got.
-        abort()
-    }
+func saveCoreData(){
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let context = appDelegate.persistentContainer.viewContext
+    let entity = NSEntityDescription.entity(forEntityName: "APIObjectMO", in: context)
+    let object = NSManagedObject(entity: entity!, insertInto: context)
     
-    return coordinator
-}()
-
-public var managedObjectContext: NSManagedObjectContext? = {
-    // Returns the managed object context for the application
-    let coordinator = persistentStoreCoordinator
-    var managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-    managedObjectContext.persistentStoreCoordinator = coordinator
-    return managedObjectContext
-}()
-
-func fetchTitle(index: Int) -> String{
-    let fetchRequest = NSFetchRequest<APIObjectMO>(entityName: "APIObjectMO")
-    var title: String = ""
-    do {
-        let fetchedResults = try managedObjectContext!.fetch(fetchRequest)
-        DispatchQueue.main.async {
-            title = fetchedResults[index].title!
-        }
-    } catch let error as NSError {
-        // something went wrong, print the error.
-        print(error.description)
-    }
-
-    return title
 }
