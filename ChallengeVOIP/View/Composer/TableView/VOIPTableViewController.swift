@@ -28,14 +28,15 @@ class VOIPTableViewController: UITableViewController{
     
         self.settingNotifications()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(VOIPCustomTableViewCell.self, forCellReuseIdentifier: cellId)
     }
     
     // MARK: - TableView Settings
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! VOIPCustomTableViewCell
         let currentItem = globalObjects[indexPath.row]
-        cell.textLabel?.text = currentItem.title
+        cell.parent = self
+        cell.objectID.text = String(describing: currentItem.id)
         return cell
     }
     
