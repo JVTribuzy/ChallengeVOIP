@@ -36,8 +36,9 @@ class VOIPTableViewController: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! VOIPCustomTableViewCell
         let currentItem = globalObjects[indexPath.row]
         cell.objectID.text = String(describing: currentItem.id)
-        cell.title.text = String(describing: currentItem.title)
+        cell.title.text = "Title:  \(String(describing: currentItem.title))"
         cell.thumbnailImage.image = currentItem.thumbNailImage
+        cell.albumID.text = "Album ID: \(String(describing: currentItem.albumID))"
         return cell
     }
     

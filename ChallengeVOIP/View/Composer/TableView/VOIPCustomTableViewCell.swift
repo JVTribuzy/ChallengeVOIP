@@ -35,27 +35,29 @@ class VOIPCustomTableViewCell: UITableViewCell, VOIPCustomView {
         return objectIDLabel
     }()
     
-    let title: UILabel = {
-        let titleLabel = UILabel()
-        titleLabel.textColor = .black
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 13)
-        titleLabel.textAlignment = .left
-        titleLabel.numberOfLines = 3
-        return titleLabel
-    }()
-    
-//    private let productImage : UIImageView = {
-//    let imgView = UIImageView(image: #imageLiteral(resourceName: “glasses”))
-//    imgView.contentMode = .scaleAspectFit
-//    imgView.clipsToBounds = true
-//    return imgView
-//    }()
-    
     let thumbnailImage: UIImageView = {
         let imgView = UIImageView()
         imgView.contentMode = .scaleAspectFill
         imgView.clipsToBounds = true
         return imgView
+    }()
+    
+    let title: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.textColor = .black
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 14)
+        titleLabel.textAlignment = .left
+        titleLabel.numberOfLines = 6
+        return titleLabel
+    }()
+    
+    let albumID: UILabel = {
+        let albumIDLabel = UILabel()
+        albumIDLabel.textColor = .black
+        albumIDLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        albumIDLabel.textAlignment = .left
+        albumIDLabel.numberOfLines = 3
+        return albumIDLabel
     }()
     
     // MARK: - Changing Image
@@ -66,11 +68,14 @@ class VOIPCustomTableViewCell: UITableViewCell, VOIPCustomView {
     func autoLayout() {
         sv(objectID,
            thumbnailImage,
-           title)
+           title,
+           albumID)
         
         thumbnailImage.size(150).top(15).bottom(15).left(73)
         objectID.centerVertically().size(50).left(8).top(15).bottom(15)
         title.top(15).right(15).left(238)
+        albumID.left(238).bottom(20).right(15)
+        
         
     }
 }
