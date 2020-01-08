@@ -10,12 +10,19 @@ import Foundation
 import UIKit
 import Stevia
 
-class VOIPTableViewController: UITableViewController{
+class VOIPTableViewController: UITableViewController, UINavigationControllerDelegate{
     
     // MARK: - Variables
-    public let customView: VOIPTableView = VOIPTableView.init(frame: .zero, style: .plain)
-    
+        
     public let cellId = "cellId"
+    
+    override init(style: UITableView.Style) {
+        super.init(style: .plain)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - viewDidLoad
     override func viewDidLoad(){
@@ -29,6 +36,12 @@ class VOIPTableViewController: UITableViewController{
         self.settingNotifications()
         
         tableView.register(VOIPCustomTableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+//        self.navigationController?.delegate = self
+        self.navigationController?.title = "Objects"
+        
     }
     
     // MARK: - TableView Settings
@@ -49,13 +62,18 @@ class VOIPTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let destination = VOIPDetailViewController(nibName: nil, bundle: nil, object: globalObjects[indexPath.row]) // Your destination
+        navigationController?.pushViewController(destination, animated: true)
+    }
 
     // MARK: - NSNotification Settings
     private func settingNotifications(){
         NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: .VOIPReloadMainTableView, object: nil)
     }
     
-    @objc func reloadData(){ self.tableView.reloadData() }
+    @objc func reloadData(){self.tableView.reloadData()}
     
 }
 
@@ -63,7 +81,5 @@ class VOIPTableViewController: UITableViewController{
 extension VOIPTableViewController: VOIPCustomView{
     func style() {}
     
-    func autoLayout() {
-        self.tableView.left(0.0).top(0.0).right(0.0).bottom(0.0)
-    }
+    func autoLayout() {}
 }

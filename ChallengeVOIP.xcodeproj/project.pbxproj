@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3815803223C391DF0033F2F6 /* VOIPCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3815803123C391DF0033F2F6 /* VOIPCustomView.swift */; };
-		3815803523C392710033F2F6 /* VOIPTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3815803423C392710033F2F6 /* VOIPTableView.swift */; };
 		3839652223C3A44E00CF9BDE /* VOIPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3839652123C3A44E00CF9BDE /* VOIPTableViewController.swift */; };
 		3861404E23C38C320066E63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861404D23C38C320066E63C /* AppDelegate.swift */; };
 		3861405023C38C320066E63C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861404F23C38C320066E63C /* SceneDelegate.swift */; };
@@ -21,6 +20,7 @@
 		3863BF1C23C5433900251127 /* VOIPCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863BF1B23C5433900251127 /* VOIPCustomTableViewCell.swift */; };
 		389D3D7723C3B739009DD7F1 /* APIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389D3D7623C3B739009DD7F1 /* APIObject.swift */; };
 		389D3D8723C530B2009DD7F1 /* Extension+NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389D3D8623C530B2009DD7F1 /* Extension+NSNotification.swift */; };
+		38FE875F23C5979E0088992E /* VOIPDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FE875E23C5979E0088992E /* VOIPDetailViewController.swift */; };
 		6AD229593FBF999F8CF0BDAF /* Pods_ChallengeVOIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284D6721059D1B7E643E5F87 /* Pods_ChallengeVOIP.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,6 @@
 		1C874A0D91293B47DEFC8B55 /* Pods-ChallengeVOIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIP.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIP/Pods-ChallengeVOIP.debug.xcconfig"; sourceTree = "<group>"; };
 		284D6721059D1B7E643E5F87 /* Pods_ChallengeVOIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeVOIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3815803123C391DF0033F2F6 /* VOIPCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPCustomView.swift; sourceTree = "<group>"; };
-		3815803423C392710033F2F6 /* VOIPTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPTableView.swift; sourceTree = "<group>"; };
 		3839652123C3A44E00CF9BDE /* VOIPTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPTableViewController.swift; sourceTree = "<group>"; };
 		3861404A23C38C320066E63C /* ChallengeVOIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeVOIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3861404D23C38C320066E63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		3863BF1B23C5433900251127 /* VOIPCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPCustomTableViewCell.swift; sourceTree = "<group>"; };
 		389D3D7623C3B739009DD7F1 /* APIObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIObject.swift; sourceTree = "<group>"; };
 		389D3D8623C530B2009DD7F1 /* Extension+NSNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSNotification.swift"; sourceTree = "<group>"; };
+		38FE875E23C5979E0088992E /* VOIPDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIPDetailViewController.swift; sourceTree = "<group>"; };
 		5FA3DE135A42387AABF46D17 /* Pods-ChallengeVOIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeVOIP.release.xcconfig"; path = "Target Support Files/Pods-ChallengeVOIP/Pods-ChallengeVOIP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3839652123C3A44E00CF9BDE /* VOIPTableViewController.swift */,
+				38FE875E23C5979E0088992E /* VOIPDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,7 +175,6 @@
 		3839652323C3A47A00CF9BDE /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				3815803423C392710033F2F6 /* VOIPTableView.swift */,
 				3863BF1B23C5433900251127 /* VOIPCustomTableViewCell.swift */,
 			);
 			path = TableView;
@@ -425,11 +425,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38FE875F23C5979E0088992E /* VOIPDetailViewController.swift in Sources */,
 				3863BF1C23C5433900251127 /* VOIPCustomTableViewCell.swift in Sources */,
 				3815803223C391DF0033F2F6 /* VOIPCustomView.swift in Sources */,
 				389D3D8723C530B2009DD7F1 /* Extension+NSNotification.swift in Sources */,
 				3839652223C3A44E00CF9BDE /* VOIPTableViewController.swift in Sources */,
-				3815803523C392710033F2F6 /* VOIPTableView.swift in Sources */,
 				3861404E23C38C320066E63C /* AppDelegate.swift in Sources */,
 				389D3D7723C3B739009DD7F1 /* APIObject.swift in Sources */,
 				3861405023C38C320066E63C /* SceneDelegate.swift in Sources */,

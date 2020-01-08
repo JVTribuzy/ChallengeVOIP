@@ -23,8 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 
         guard let windowScene = scene as? UIWindowScene else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = VOIPTableViewController.init()
+        let nc = UINavigationController(rootViewController: VOIPTableViewController(style: .plain))
+        window?.rootViewController = nc
         window?.makeKeyAndVisible()
+        
         
     }
 

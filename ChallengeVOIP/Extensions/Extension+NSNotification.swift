@@ -10,4 +10,5 @@ import Foundation
 
 extension NSNotification.Name{
     public static let VOIPReloadMainTableView = NSNotification.Name("com.tribuzy.ChallengeVOIP-roloadMainTableView")
+    public static let VOIPReloadDetailView = NSNotification.Name("com.tribuzy.ChallengeVOIP-roloadDetailView")
 }

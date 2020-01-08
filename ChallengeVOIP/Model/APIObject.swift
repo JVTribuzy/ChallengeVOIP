@@ -26,6 +26,7 @@ public class APIObject {
     private static let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)
     
     
+    //MARK: - Download Thumnail Image
     public var thumbNailCachedImage: UIImage? = nil
     
     var thumbNailImage: UIImage {
@@ -58,7 +59,41 @@ public class APIObject {
         task.resume()
     }
     
+    //MARK: - Download Full Image
+    public var fullCachedImage: UIImage? = nil
     
+    var fullImage: UIImage {
+        if fullCachedImage == nil {
+            fullCachedImage = APIObject.placeholderImage
+            fetchFullImage()
+        }
+
+        return fullCachedImage!
+    }
+
+    private func fetchFullImage() {
+        guard let url = URL(string: self.url) else {
+            return
+        }
+
+        let task = APIObject.imageDownloadSession.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            
+            DispatchQueue.main.async {
+                self.fullCachedImage = UIImage(data: data, scale: UIScreen.main.scale)
+                NotificationCenter.default.post(name: .VOIPReloadDetailView, object: nil)
+            }
+            
+        }
+
+        task.resume()
+    }
+    
+    
+    //MARK: - init
     init(_ dictionary: [String: Any]) {
         self.albumID = dictionary["albumID"] as? Int ?? 0
         self.id = dictionary["id"] as? Int ?? 0
