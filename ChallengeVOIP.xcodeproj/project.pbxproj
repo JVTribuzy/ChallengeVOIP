@@ -129,11 +129,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3815802D23C38F4F0033F2F6 /* ViewModel */ = {
+		3815802D23C38F4F0033F2F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3839652123C3A44E00CF9BDE /* VOIPTableViewController.swift */,
 			);
-			path = ViewModel;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		3815802E23C38F750033F2F6 /* Settings */ = {
@@ -172,8 +173,8 @@
 		3839652323C3A47A00CF9BDE /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				3839652123C3A44E00CF9BDE /* VOIPTableViewController.swift */,
-				3884520023C3962B0034B63D /* UI */,
+				3815803423C392710033F2F6 /* VOIPTableView.swift */,
+				3863BF1B23C5433900251127 /* VOIPCustomTableViewCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -205,7 +206,7 @@
 			children = (
 				389D3D8523C5308F009DD7F1 /* Extensions */,
 				3815802E23C38F750033F2F6 /* Settings */,
-				3815802D23C38F4F0033F2F6 /* ViewModel */,
+				3815802D23C38F4F0033F2F6 /* Controller */,
 				3815802C23C38F460033F2F6 /* View */,
 				3815802B23C38F3A0033F2F6 /* Model */,
 				3861405323C38C320066E63C /* Main.storyboard */,
@@ -231,15 +232,6 @@
 				3861407423C38C350066E63C /* Info.plist */,
 			);
 			path = ChallengeVOIPUITests;
-			sourceTree = "<group>";
-		};
-		3884520023C3962B0034B63D /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				3815803423C392710033F2F6 /* VOIPTableView.swift */,
-				3863BF1B23C5433900251127 /* VOIPCustomTableViewCell.swift */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		389D3D8523C5308F009DD7F1 /* Extensions */ = {

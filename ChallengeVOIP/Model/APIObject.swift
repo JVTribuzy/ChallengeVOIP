@@ -7,20 +7,64 @@
 //
 
 import Foundation
+import UIKit
 
-public struct APIObject {
+public class APIObject {
     var albumID: Int
     var id: Int
     var title: String
-    var url: URL
-    var thumbNailURL: URL
+    var url: String
+    var thumbNailURL: String
+    
+    static let placeholderImage: UIImage = {
+        return UIImage(named: "placeholder")!
+    }()
+    static let defaultSize: CGSize = {
+        return APIObject.placeholderImage.size
+    }()
+    
+    private static let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)
+    
+    
+    public var thumbNailCachedImage: UIImage? = nil
+    
+    var thumbNailImage: UIImage {
+        if thumbNailCachedImage == nil {
+            thumbNailCachedImage = APIObject.placeholderImage
+            fetchThumbNailImage()
+        }
+
+        return thumbNailCachedImage!
+    }
+
+    private func fetchThumbNailImage() {
+        guard let url = URL(string: self.thumbNailURL) else {
+            return
+        }
+
+        let task = APIObject.imageDownloadSession.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            
+            DispatchQueue.main.async {
+                self.thumbNailCachedImage = UIImage(data: data, scale: UIScreen.main.scale)
+                NotificationCenter.default.post(name: .VOIPReloadMainTableView, object: nil)
+            }
+            
+        }
+
+        task.resume()
+    }
+    
     
     init(_ dictionary: [String: Any]) {
         self.albumID = dictionary["albumID"] as? Int ?? 0
         self.id = dictionary["id"] as? Int ?? 0
         self.title = dictionary["title"] as? String ?? ""
-        self.url = dictionary["url"] as? URL ?? URL(fileURLWithPath: "")
-        self.thumbNailURL = dictionary["thumbNailURL"] as? URL ?? URL(fileURLWithPath: "")
+        self.url = dictionary["url"] as? String ?? ""
+        self.thumbNailURL = dictionary["thumbnailUrl"] as? String ?? ""
     }
 }
 
@@ -57,3 +101,38 @@ func loadJSON(){
     
     
 }
+
+
+
+// MARK: - Download Session for the Images
+//let placeholderImage: UIImage = {
+//    return UIImage(named: "placeholder")!
+//}()
+//
+//let defaultSize: CGSize = {
+//    return CGSize(width: 150, height: 150)
+//}()
+//
+//let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)
+//
+//private var cachedImage: UIImage? = nil
+//
+//var image: UIImage {
+//    if cachedImage == nil {
+//        cachedImage = placeholderImage
+//    }
+//
+//    return cachedImage!
+//}
+//
+//private func fetchImage(url: URL) {
+//    let task = imageDownloadSession.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
+//        guard let data = data, error == nil else {
+//            return
+//        }
+//        cachedImage = UIImage(data: data, scale: UIScreen.main.scale)
+//        
+//    }
+//
+//    task.resume()
+//}

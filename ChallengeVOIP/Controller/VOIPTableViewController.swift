@@ -35,13 +35,18 @@ class VOIPTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! VOIPCustomTableViewCell
         let currentItem = globalObjects[indexPath.row]
-        cell.parent = self
         cell.objectID.text = String(describing: currentItem.id)
+        cell.title.text = String(describing: currentItem.title)
+        cell.thumbnailImage.image = currentItem.thumbNailImage
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return globalObjects.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
     }
 
     // MARK: - NSNotification Settings
